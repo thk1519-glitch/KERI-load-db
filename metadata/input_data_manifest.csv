@@ -1,0 +1,10 @@
+dataset_name,provider,source_url,reference_year,expected_path,notes
+KPX 5-min national supply-demand (현재수요),Korea Power Exchange,https://openapi.kpx.or.kr/sukub.do,2024,data/raw/kpx/openapi_YYYYMMDD_YYYYMMDD.csv (4 quarterly files),cp949 encoding; 5-min "현재수요(MW)"
+KEPCO district-sector monthly sales,Korea Electric Power Corporation,https://home.kepco.co.kr (Electricity Sales Statistics by Municipality),2024,data/raw/kepco/consumption_industry.csv,229 districts x 38 use-sectors x 12 months
+KEPCO PPA monthly generation (HOME),KPX Supply-Demand Forecast Information System,https://home.kepco.co.kr,2024,data/raw/kepco/HOME_전력수급_추계정보.xlsx,monthly KEPCO-PPA solar generation
+Representative industry load patterns (77 KSIC + residential),KEPCO Management Research Institute,contact provider,2024,data/raw/patterns/표준산업분류_중분류_24시상대계수.xlsx,monthly 24-h normalized indices
+Use-sector to KSIC mapping table (38<->77),this repository,data/mapping_use38_ksic77.xlsx,2024,data/raw/patterns/표준매핑표_확정_용도업종38_KSIC77.xlsx,authored by this study; CC BY 4.0
+Eup-myeon-dong industry-level quarterly sales,KEPCO Electric Power Big Data Center,https://bigdata.kepco.co.kr ("산업분류별 전력사용량"),2024,data/raw/kepco/industry_dong_{Q}_2024.csv (4 files),78 industry classes; quarterly
+KPG 193 bus locations,KPG 193 test system (Song and Kim arXiv:2411.14756),https://egolab.kentech.ac.kr/resources/kpg-test-system,2022,data/raw/geo/bus_location.csv,193 bus coordinates; archived KPG 193 release
+District representative coordinates,authors (derived from GADM),https://gadm.org,2024,data/raw/geo/sigungu_coordinates_master.csv,229 districts
+KPG 193 reference bus demand (2022),KPG 193 test system,https://egolab.kentech.ac.kr/resources/kpg-test-system,2022,data/raw/geo/final_demand_timeseries_2022.csv,used for structural comparison only; archived KPG 193 release
